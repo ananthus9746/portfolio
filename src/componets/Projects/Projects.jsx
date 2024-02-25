@@ -9,31 +9,36 @@ import { GoArrowUpRight } from "react-icons/go";
 function Projects() {
   return (
     <>
-      <div className={style.head}>LATEST PROJECTS</div>
+      <div className={style.head}>RECENT PROJECTS</div>
       <div className={style.project_container}>
         <div className={style.card}>
           <div className={style.arrow}>
             <GoArrowUpRight size={26} />
           </div>
+     
+          <p className={style.lareai}>Lares ai</p>
           <img src={laresai} alt="" className={style.image} />
         </div>
         <div className={style.card}>
           <div className={style.arrow}>
             <GoArrowUpRight size={26} />
           </div>
-          <img src={fintrens} alt=""  className={style.image}/>
-        </div>
-        <div className={style.card}>
-          <div className={style.arrow}>
-            <GoArrowUpRight size={26}  />
-          </div>
-          <img src={homex} alt=""  className={style.image}/>
+          <p className={style.lareai}>Fintrens</p>
+          <img src={fintrens} alt="" className={style.image} />
         </div>
         <div className={style.card}>
           <div className={style.arrow}>
             <GoArrowUpRight size={26} />
           </div>
-          <img src={competion} alt=""  className={style.image}/>
+          <p className={style.lareai}>Homex</p>
+          <img src={homex} alt="" className={style.image} />
+        </div>
+        <div className={style.card}>
+          <div className={style.arrow}>
+            <GoArrowUpRight size={26} />
+          </div>
+          <p className={style.lareai}>Competition Inteligence</p>
+          <img src={competion} alt="" className={style.image} />
         </div>
       </div>
     </>

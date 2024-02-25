@@ -28,3 +28,9 @@ html {
 html.dark-mode {
   --cursor-color: #fff
 }
+a {
+  all: unset;
+}
+a {
+  text-decoration: none;
+}

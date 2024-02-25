@@ -24,7 +24,6 @@ function App() {
         border: '3px solid var(--cursor-color)'
       }}
     />
-     <Navbar/>
      <Home/>
     </div>
   )

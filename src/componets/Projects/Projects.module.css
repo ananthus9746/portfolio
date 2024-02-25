@@ -1,96 +1,136 @@
-.head{
-    font-size: 30px;
-    font-weight: 600;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-
+.head {
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
-.project_container{
-    /* background-color: rebeccapurple; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
+.project_container {
+  /* background-color: rebeccapurple; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-.card{
-    background-color: rgba(230, 230, 230, 0.462);
-    width: 47%;
-    height: 550px;
-    border-radius: 30px;
-    border: 1px solid rgba(128, 128, 128, 0.161);
-    /* -webkit-box-shadow: 1px 0px 190px -69px rgba(0,0,0,0.75);
+.card {
+  background-color: rgba(230, 230, 230, 0.462);
+  width: 47%;
+  height: 550px;
+  border-radius: 30px;
+  border: 1px solid rgba(128, 128, 128, 0.161);
+  /* -webkit-box-shadow: 1px 0px 190px -69px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 0px 190px -69px rgba(0,0,0,0.75); */
-    box-shadow: 1px 0px 190px -69px rgba(0, 0, 0, 0.202);  
-   position: relative;   
-   overflow: hidden;
+  box-shadow: 1px 0px 190px -69px rgba(0, 0, 0, 0.202);
+  position: relative;
+  overflow: hidden;
+  transition: all.5s ease;
 }
-.card img{
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  transition: transform 0.5s ease;
+}
+
+.lareai {
+  display: none;
+  position: absolute;
+
+  z-index: 1; /* Ensure it's above other elements */
+}
+
+.card:hover .lareai {
+  display: block;
+  font-size: 90px;
+  padding-top: 90px;  color: rgba(210, 222, 255, 0.462);
+  background-color: rgba(0, 0, 0, 0.247);
+  width: 100%;
+  height: 100%;
+  
+  background: rgba(225, 225, 225, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(209, 209, 209, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  
+
+
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(10);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+.card:hover .image {
+  transform: scale(1.2); /* Scale up by 20% on hover */
+}
+
+.arrow {
+  background-color: rgba(219, 219, 219, 0.455);
+  padding: 5px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(252, 252, 252);
+  border-radius: 100px;
+  position: absolute;
+  right: 0;
+  margin: 15px;
+
+  transition: all 0.3s;
+
+  z-index: 10;
+}
+.arrow:hover {
+  background-color: rgba(219, 219, 219, 0.658);
+  padding: 5px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(44, 44, 44);
+  border-radius: 100px;
+  position: absolute;
+  right: 0;
+  margin: 15px;
+  scale: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .head {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+
+  }
+  
+  .card {
+    width: 100%;
+    height: 430px;
+  }
+  .card img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 30px;
     transition: transform 0.5s ease;
-
-}
-.card:hover .image {
-    transform: scale(1.2); /* Scale up by 20% on hover */
   }
+  .card:hover .lareai {
+    font-size: 70px;
+    padding-top: 90px;
+    height: 110%;
 
-.arrow{
-    background-color: rgba(219, 219, 219, 0.455);
-    padding: 5px;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(252, 252, 252);
-    border-radius: 100px;
-    position: absolute;
-    right: 0;
-    margin: 15px;
-
-    transition: all 0.3s;
-
-    z-index: 10;
-}
-.arrow:hover{
-    background-color: rgba(219, 219, 219, 0.658);
-    padding: 5px;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(44, 44, 44);
-    border-radius: 100px;
-    position: absolute;
-    right: 0;
-    margin: 15px;
-    scale: 1.2;
-}
-@media screen and (max-width: 768px) {
-    .head{
-        font-size: 25px;
-      text-align: center;
-      padding-bottom: 30px;
-
-    
-    }
-    .card{
-        width: 100%;
-        height:430px;
-
-    }
-    .card img{
-        object-fit: cover;
-        width: 100%;
-        height:100%;
-        border-radius: 30px;
-        transition: transform 0.5s ease;
-    
-    }
+  }
 }

@@ -68,6 +68,11 @@
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s; /* Adding transition */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .contact_btn:hover {
   background-color: rgb(43, 43, 43);
@@ -252,6 +257,8 @@
     transition: background-color 0.3s, color 0.3s; /* Adding transition */
     margin: auto;
     margin-top: 25px;
+
+
 
   }
   .contact_btn {
