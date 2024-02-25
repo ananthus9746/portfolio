@@ -12,24 +12,32 @@ function Projects() {
       <div className={style.head}>RECENT PROJECTS</div>
       <div className={style.project_container}>
         <div className={style.card}>
-          <div className={style.arrow}>
-            <GoArrowUpRight size={26} />
-          </div>
-     
+          <a href="https://www.lares.ai/">
+            <div className={style.arrow}>
+              <GoArrowUpRight size={26} />
+            </div>
+          </a>
+
           <p className={style.lareai}>Lares ai</p>
           <img src={laresai} alt="" className={style.image} />
         </div>
         <div className={style.card}>
-          <div className={style.arrow}>
-            <GoArrowUpRight size={26} />
-          </div>
+          <a href="https://www.figma.com/file/XbfXI8ip8qjE1WYYa0cayQ/Stock-Audit?type=design&mode=design&t=AYIbFYAZ2jreulgD-0">
+            <div className={style.arrow}>
+              <GoArrowUpRight size={26} />
+            </div>
+          </a>
+
           <p className={style.lareai}>Fintrens</p>
           <img src={fintrens} alt="" className={style.image} />
         </div>
         <div className={style.card}>
-          <div className={style.arrow}>
-            <GoArrowUpRight size={26} />
-          </div>
+          <a href="https://www.ananthu.online/">
+            <div className={style.arrow}>
+              <GoArrowUpRight size={26} />
+            </div>
+          </a>
+
           <p className={style.lareai}>Homex</p>
           <img src={homex} alt="" className={style.image} />
         </div>
