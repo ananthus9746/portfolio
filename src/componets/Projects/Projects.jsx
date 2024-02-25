@@ -42,9 +42,12 @@ function Projects() {
           <img src={homex} alt="" className={style.image} />
         </div>
         <div className={style.card}>
-          <div className={style.arrow}>
-            <GoArrowUpRight size={26} />
-          </div>
+          <a href="https://www.wataniya.com.sa/">
+            <div className={style.arrow}>
+              <GoArrowUpRight size={26} />
+            </div>
+          </a>
+
           <p className={style.lareai}>Competition Inteligence</p>
           <img src={competion} alt="" className={style.image} />
         </div>
