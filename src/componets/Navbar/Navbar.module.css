@@ -1,0 +1,46 @@
+.navabar {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  /* position: fixed;
+  background-color: rebeccapurple;
+  width: 76%;
+  max-width: 1200px;
+  z-index: 10000; */
+}
+.nav_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.link_active {
+  font-weight: 600;
+  font-size: 14px;
+
+}
+.links {
+  display: flex;
+  gap: 20px;
+
+}
+.an {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+
+}
+.circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 100px;
+  background-color:rgb(244,184,159);
+}
+.link {
+  font-weight: 400;
+  color: rgb(49, 49, 49);
+  font-size: 14px;
+}

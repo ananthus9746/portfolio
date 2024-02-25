@@ -1,0 +1,21 @@
+.home{
+    padding: 10px;
+    height: 100vh;
+    padding-top: 30px;
+
+
+}
+.btn{
+text-align: center;
+margin-top: 40px;
+color: rgb(159, 159, 159);
+cursor: pointer;
+transition: all 0.2s;
+}
+.btn:hover{
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(33, 33, 33);
+    cursor: pointer;
+    scale: 1.2;
+    }

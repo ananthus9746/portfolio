@@ -1,0 +1,30 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+
+}
+.layout{
+  max-width: 1200px;
+  margin: auto;
+}
+body{
+  padding: 0px;
+  margin: 0px;
+ 
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide horizontal scrollbar */
+body::-webkit-scrollbar-horizontal {
+  display: none;
+}
+html {
+  --cursor-color: #333
+}
+
+html.dark-mode {
+  --cursor-color: #fff
+}

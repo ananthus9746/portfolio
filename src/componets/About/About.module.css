@@ -1,0 +1,269 @@
+.about_left {
+  display: flex;
+  padding: 10px;
+  min-height: 500px;
+  gap: 20px;
+}
+.about_content {
+  background-color: rgb(245, 245, 245);
+  padding: 30px;
+  width: 80%;
+
+  animation: animateBg 18s linear infinite;
+  background-image: linear-gradient(
+    120deg,
+    #f0f0f0,
+    #ffefdfbb,
+    #f2f2f2,
+    #f0f0f0,
+    #fffaf5
+  );
+  background-size: 400% 100%;
+
+  border-radius: 30px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+.image_cotainer {
+  min-height: 500px;
+  width: 28%;
+}
+.image_cotainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.header {
+  font-size: 37px;
+  max-width: 610px;
+}
+.para {
+  font-size: 15px;
+  max-width: 600px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.vector {
+  position: absolute;
+  /* background-color: rebeccapurple; */
+  right: -81px;
+  bottom: 30px;
+}
+.btn_container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 120px;
+}
+
+.contact_btn {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 13px;
+  width: 200px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Adding transition */
+}
+.contact_btn:hover {
+  background-color: rgb(43, 43, 43);
+}
+
+.icon {
+  padding: 12px;
+  background-color: white;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Adding transition */
+}
+.icon:hover {
+  background: linear-gradient(
+    18deg,
+    rgb(37, 91, 241) 20%,
+    rgb(71, 131, 214) 78%
+  );
+
+  cursor: pointer;
+  color: white;
+}
+
+.insta {
+  padding: 12px;
+  background-color: white;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Adding transition */
+}
+
+.insta:hover {
+  background: linear-gradient(
+    18deg,
+    rgba(241, 112, 37, 1) 20%,
+    rgba(214, 71, 168, 1) 78%
+  );
+  padding: 12px;
+  background-color: white;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+.twiiter {
+  padding: 12px;
+  background-color: white;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Adding transition */
+}
+
+.twiiter:hover {
+  background-color: rgb(0, 102, 255);
+  padding: 12px;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+
+.linkdin {
+  padding: 12px;
+  background-color: white;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Adding transition */
+}
+
+.linkdin:hover {
+  background-color: rgb(0, 39, 196);
+  padding: 12px;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+
+.whatsapp {
+  padding: 12px;
+  background-color: white;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Adding transition */
+}
+
+.whatsapp:hover {
+  background-color: rgb(0, 184, 25);
+  padding: 12px;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+
+  background: linear-gradient(18deg, rgb(0, 184, 25) 20%, rgb(1, 210, 81) 78%);
+}
+
+@keyframes animateBg {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+.contact_btn_phone {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .about_left {
+    flex-direction: column; /* Change flex direction to column */
+  }
+
+  .image_cotainer {
+    order: -1; /* Move the image to the top */
+    width: 100%;
+    min-height: unset;
+    height: 310px;
+    background-color: rgba(231, 231, 231, 0.788);
+    border-radius: 30px;
+  }
+  .about_content {
+    text-align: center;
+    padding: 30px;
+    width: 90%;
+  }
+  .header {
+    font-size: 28px;
+  }
+  .contact_btn_phone {
+    display: block;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 13px;
+    width: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Adding transition */
+    margin: auto;
+    margin-top: 25px;
+
+  }
+  .contact_btn {
+    display: none;
+  }
+  .btn_container {
+    margin-top: 30px;
+    gap: unset;
+    justify-content: space-between;
+  }
+
+  .contact_btn_phone:hover {
+    background-color: rgb(43, 43, 43);
+  }
+}
