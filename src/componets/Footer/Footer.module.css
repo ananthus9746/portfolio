@@ -61,6 +61,12 @@
     gap: 30px;
     margin-top: 50px;
   }
+  .btns{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+
+  }
   
   .contact_btn {
     color: white;
@@ -254,8 +260,15 @@
     display: none;
   }
   .btn_container {
-    margin-top: 30px;
-    gap: unset;
+gap: unset;
+
+  }
+  .btns{
+    width: 100%;
+    display: flex;
     justify-content: space-between;
+    gap: unset;
+
+
   }
   }

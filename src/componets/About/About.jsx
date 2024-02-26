@@ -28,12 +28,27 @@ function About() {
           ananthus.ann@gmail.com
         </p>
 
-        <button className={style.contact_btn_phone}>
+        {/* <button className={style.contact_btn_phone} onClick={contact}>
           Contact me 
-        </button>
+        </button> */}
+
+        <ReactWhatsapp
+          number="+9746821964"
+          message="Hi from portfolio website.."
+          style={{
+            backgroundColor: "transparent",
+            border: "none",
+            cursor: "pointer",
+            width: "100%",
+          }}
+        >
+          <button className={style.contact_btn_phone}>Contact me</button>
+        </ReactWhatsapp>
 
         <div className={style.btn_container}>
-          <button className={style.contact_btn}>Contact me <IoIosArrowRoundForward size={24}/></button>
+          <button className={style.contact_btn}>
+            Contact me <IoIosArrowRoundForward size={24} />
+          </button>
           <a href="https://www.instagram.com/ananthu.official/">
             <div className={style.insta}>
               <AiFillInstagram size={26} />

@@ -18,33 +18,54 @@ function Footer() {
           Feel free to reach out for collaborations or just a friendly hello
           ananthus.ann@gmail.com{" "}
         </p>
-        <button className={style.contact_btn_phone}>Contact me</button>
-
+        <ReactWhatsapp
+          number="+9746821964"
+          message="Hi from portfolio website.."
+          style={{
+            backgroundColor: "transparent",
+            border: "none",
+            cursor: "pointer",
+            width: "100%",
+          }}
+        >
+          <button className={style.contact_btn_phone}>Contact me</button>
+        </ReactWhatsapp>
         <div className={style.btn_container}>
-          <button className={style.contact_btn}>Contact me</button>
-          <a href="https://www.instagram.com/ananthu.official/">
-            <div className={style.insta}>
-              <AiFillInstagram size={26} />
-            </div>
-          </a>
+          <ReactWhatsapp
+            number="+9746821964"
+            message="Hi from portfolio website.."
+            style={{
+              backgroundColor: "transparent",
+              border: "none",
+              cursor: "pointer",
+            }}
+          >
+            <button className={style.contact_btn}>Contact me</button>
+          </ReactWhatsapp>
+          <div className={style.btns}>
+            <a href="https://www.instagram.com/ananthu.official/">
+              <div className={style.insta}>
+                <AiFillInstagram size={26} />
+              </div>
+            </a>
 
-          <a href="https://twitter.com/ananthu974682">
-            <div className={style.twiiter}>
-              <FaTwitter size={18} />
-            </div>
-          </a>
+            <a href="https://twitter.com/ananthu974682">
+              <div className={style.twiiter}>
+                <FaTwitter size={18} />
+              </div>
+            </a>
 
-          <a href="https://www.linkedin.com/in/ananthu-s-329857184/">
-            <div className={style.linkdin}>
-              <FaLinkedin size={18} />
-            </div>
-          </a>
-          <a href="https://www.facebook.com/ananthu.ananthu.5059/">
-            <div className={style.icon}>
-              <FaFacebook size={26} />
-            </div>
-          </a>
-          <div className={style.whatsapp}>
+            <a href="https://www.linkedin.com/in/ananthu-s-329857184/">
+              <div className={style.linkdin}>
+                <FaLinkedin size={18} />
+              </div>
+            </a>
+            <a href="https://www.facebook.com/ananthu.ananthu.5059/">
+              <div className={style.icon}>
+                <FaFacebook size={26} />
+              </div>
+            </a>
+            <div className={style.whatsapp}>
               <ReactWhatsapp
                 number="+9746821964"
                 message="Hi from porfolio website.."
@@ -57,8 +78,7 @@ function Footer() {
                 <RiWhatsappFill size={26} className={style.whatsapp} />
               </ReactWhatsapp>
             </div>
-
-
+          </div>
         </div>
       </div>
     </div>
