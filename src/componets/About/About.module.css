@@ -10,13 +10,21 @@
   width: 80%;
 
   animation: animateBg 18s linear infinite;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     120deg,
     #f0f0f0,
     #ffefdfbb,
     #f2f2f2,
     #f0f0f0,
     #fffaf5
+  ); */
+  background-image: linear-gradient(
+    120deg,
+    #fdce9f20,
+    #44699627,
+    #f7c29021,
+    #a4bdd286,
+    #91a3bc1a
   );
   background-size: 400% 100%;
 
@@ -28,13 +36,18 @@
 }
 .image_cotainer {
   min-height: 500px;
-  width: 28%;
+  width: 50%;
+
+  /* background-color: rebeccapurple; */
+
 }
 .image_cotainer img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 30px;
+
+  
 }
 .header {
   font-size: 37px;

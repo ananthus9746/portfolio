@@ -4,13 +4,18 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import style from "./About.module.css";
-import profileImage from "../../assets/profileImage.png";
+import profileImageOne from "../../assets/profileImage.png";
+import profileImage from "../../assets/DSC07623 (4) croped.jpg";
+
 import Vector from "../../assets/Vector 1 (1).png";
 import { RiWhatsappFill } from "react-icons/ri";
 import ReactWhatsapp from "react-whatsapp";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { useMediaQuery } from "@react-hook/media-query"; // Import useMediaQuery
 
 function About() {
+  const isLessThan768 = useMediaQuery("(max-width: 767px)"); // Check if screen width is less than 768px
+
   return (
     <div className={style.about_left}>
       <div className={style.about_content}>
@@ -89,7 +94,7 @@ function About() {
         </div>
       </div>
       <div className={style.image_cotainer}>
-        <img src={profileImage} alt="" />
+      <img src={isLessThan768 ? profileImageOne : profileImage} alt="" />
       </div>
     </div>
   );
