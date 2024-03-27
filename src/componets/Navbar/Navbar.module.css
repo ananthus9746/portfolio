@@ -1,5 +1,5 @@
 .navabar {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(194, 82, 82); */
   padding: 10px;
   padding-left: 30px;
   padding-right: 30px;
@@ -17,12 +17,12 @@
 .link_active {
   font-weight: 600;
   font-size: 14px;
-
 }
 .links {
   display: flex;
   gap: 20px;
-
+  justify-content: center;
+  align-items: center;
 }
 .an {
   font-weight: 600;
@@ -31,16 +31,112 @@
   align-items: center;
   gap: 5px;
   font-size: 14px;
-
 }
 .circle {
   width: 18px;
   height: 18px;
   border-radius: 100px;
-  background-color:rgb(244,184,159);
+  background-color: rgb(244, 184, 159);
 }
 .link {
   font-weight: 400;
   color: rgb(49, 49, 49);
   font-size: 14px;
+}
+.link_a{
+  font-weight: 400;
+  color: rgb(49, 49, 49);
+  font-size: 14px;
+  /* background-color: rebeccapurple;
+  text-align: center;
+padding: 0px;
+margin: 0px; */
+}
+
+.drawer {
+  width: 100% !important;
+  background-color: rgb(241, 241, 241) !important;
+}
+.dowload {
+  display: none;
+}
+.dowload :hover {
+  display: none;
+}
+.close {
+  display: none;
+}
+.open {
+  display: none;
+}
+.mobile_nav_items{
+  display: none;
+}
+@media (max-width: 600px) {
+  .navabar {
+    /* background-color: rgb(194, 82, 82);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px; */
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    z-index: 3;
+    margin: auto;
+  }
+
+  .nav_content {
+    display: none;
+  }
+  .open {
+    display: block;
+  }
+  .close {
+    padding: 20px;
+    display: block;
+  }
+  .mobile_nav {
+    display: flex;
+    /* background-color: aliceblue; */
+    justify-content: space-between;
+    align-items: center;
+  }
+  .dowload {
+    display: block;
+
+    font-weight: 400;
+    cursor: pointer;
+    margin-right: 75px;
+  }
+  .dowload :hover {
+    display: block;
+
+    color: rgb(225, 225, 225);
+  }
+  .mobile_nav_items{
+    display: block;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 60px;
+    align-items: center;
+
+  }
+  .mobile_items{
+    font-size: 2.4rem;
+    font-weight: 400;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .mobile_items_a{
+    font-size: 2.4rem;
+    font-weight: 400;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 30px;
+  }
 }

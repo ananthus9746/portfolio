@@ -5,7 +5,38 @@ import Projects from "../Projects/Projects";
 import Testamonial from "../Testamonial/Testamonial";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
+import { motion, useAnimation } from "framer-motion";
+
 function Home() {
+  const projectControls = useAnimation();
+  const footerControls = useAnimation();
+
+  const handleScroll = () => {
+    const yOffset = window.scrollY;
+    const thresholdProject = 10; // adjust this value to trigger Projects animation earlier or later
+    const thresholdFooter = 600; // adjust this value to trigger Footer animation earlier or later
+
+    if (yOffset > thresholdProject) {
+      projectControls.start({ opacity: 1, y: 0 });
+    } else {
+      projectControls.start({ opacity: 1, y: 50 });
+    }
+
+    if (yOffset > thresholdFooter) {
+      footerControls.start({ opacity: 1, y: 0 });
+    } else {
+      footerControls.start({ opacity: 0, y: 50 });
+    }
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const profileRef = useRef(null);
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
@@ -21,27 +52,39 @@ function Home() {
   const scrollToContact = () => {
     contactRef.current.scrollIntoView({ behavior: "smooth" });
   };
-  // {scrollToProfile,scrollToAbout,scrollToContact}
+
   return (
     <div className={style.home}>
-      <Navbar scrollToProfile={scrollToProfile} scrollToAbout={scrollToAbout} scrollToContact={scrollToContact}/>
-      {/* <nav>
-        <button onClick={scrollToProfile}>Profile</button>
-        <button onClick={scrollToAbout}>About</button>
-        <button onClick={scrollToContact}>Contact</button>
-      </nav> */}
+      <Navbar
+        scrollToProfile={scrollToProfile}
+        scrollToAbout={scrollToAbout}
+        scrollToContact={scrollToContact}
+      />
       <section ref={profileRef}>
         <About />
       </section>
-      <section ref={aboutRef}>
-        <Projects />
-      </section>
+      <motion.div
+        initial={{ opacity: 710, y: 50 }}
+        animate={projectControls}
+        transition={{ duration: 0.5 }}
+      >
+        <section ref={aboutRef}>
+          <Projects />
+        </section>
+      </motion.div>
+
       <a href="https://github.com/ananthus9746">
         <p className={style.btn}>TO KNOW MORE.</p>
       </a>
-      <section ref={contactRef}>
-        <Footer />
-      </section>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={footerControls}
+        transition={{ duration: 0.9 }}
+      >
+        <section ref={contactRef}>
+          <Footer />
+        </section>
+      </motion.div>
     </div>
   );
 }

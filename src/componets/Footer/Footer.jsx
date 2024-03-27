@@ -8,10 +8,32 @@ import profileImage from "../../assets/profileImage.png";
 import Vector from "../../assets/Vector 1 (1).png";
 import { RiWhatsappFill } from "react-icons/ri";
 import ReactWhatsapp from "react-whatsapp";
+import { motion, useAnimation } from "framer-motion";
 
 function Footer() {
+  const controls = useAnimation();
+
+  const handleScroll = () => {
+    const yOffset = window.scrollY;
+    const threshold = 2300; // adjust this value to trigger animation earlier or later
+
+    if (yOffset > threshold) {
+      controls.start({ opacity: 1, y: 0 });
+    } else {
+      controls.start({ opacity: 0, y: 50 });
+    }
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className={style.about_left}>
+  
       <div className={style.about_content}>
         <h2 className={style.header}>Want to work together?</h2>
         <p className={style.para}>

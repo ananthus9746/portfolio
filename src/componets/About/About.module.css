@@ -249,6 +249,7 @@
     height: 310px;
     background-color: rgba(231, 231, 231, 0.788);
     border-radius: 30px;
+    margin-top: 60px;
   }
   .about_content {
     text-align: center;
