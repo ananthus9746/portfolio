@@ -40,10 +40,12 @@ function Navbar({ scrollToProfile, scrollToAbout, scrollToContact }) {
             Contact
           </p>
           <a
-{/*               href="https://drive.google.com/file/d/1tpb5sQEgeQN6bg5R4wimFBVrxUDnQpJW/view?usp=sharing"
-              className={style.link_a}            > */}
-              Download CV
-            </a>
+            //  href="https://drive.google.com/file/d/1tpb5sQEgeQN6bg5R4wimFBVrxUDnQpJW/view?usp=sharing"
+            className={style.link_a}
+
+          >
+            Download CV
+          </a>
         </div>
       </div>
 
@@ -55,8 +57,8 @@ function Navbar({ scrollToProfile, scrollToAbout, scrollToContact }) {
 
           <a
             className={style.dowload}
-{/*             href="https://drive.google.com/file/d/1tpb5sQEgeQN6bg5R4wimFBVrxUDnQpJW/view?usp=sharing"
-          > */}
+          // href="https://drive.google.com/file/d/1tpb5sQEgeQN6bg5R4wimFBVrxUDnQpJW/view?usp=sharing"
+          >
             Download CV
           </a>
         </div>
@@ -72,11 +74,11 @@ function Navbar({ scrollToProfile, scrollToAbout, scrollToContact }) {
           </div>
 
           <div className={style.mobile_nav_items}>
-            <p onClick={handleProfileClick}  className={style.mobile_items}>About</p>
-            <p onClick={handleProjectClick}  className={style.mobile_items}>Projects</p>
-            <p onClick={handleContactClick}   className={style.mobile_items}>Contact</p>
+            <p onClick={handleProfileClick} className={style.mobile_items}>About</p>
+            <p onClick={handleProjectClick} className={style.mobile_items}>Projects</p>
+            <p onClick={handleContactClick} className={style.mobile_items}>Contact</p>
             <a
-              href="https://drive.google.com/file/d/1tpb5sQEgeQN6bg5R4wimFBVrxUDnQpJW/view?usp=sharing"
+              // href="https://drive.google.com/file/d/1tpb5sQEgeQN6bg5R4wimFBVrxUDnQpJW/view?usp=sharing"
               className={style.mobile_items_a}
             >
               Download CV
