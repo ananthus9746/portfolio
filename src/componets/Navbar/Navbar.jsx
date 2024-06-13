@@ -44,7 +44,8 @@ function Navbar({ scrollToProfile, scrollToAbout, scrollToContact }) {
             className={style.link_a}
 
           >
-            Download CV
+            {/* Download CV */}
+            
           </a>
         </div>
       </div>
@@ -59,7 +60,10 @@ function Navbar({ scrollToProfile, scrollToAbout, scrollToContact }) {
             className={style.dowload}
           // href="https://drive.google.com/file/d/1tpb5sQEgeQN6bg5R4wimFBVrxUDnQpJW/view?usp=sharing"
           >
-            Download CV
+            {/* Download CV */}
+            <p className={style.an}>
+              <div className={style.circle}></div> AN.
+            </p>
           </a>
         </div>
 
@@ -81,7 +85,7 @@ function Navbar({ scrollToProfile, scrollToAbout, scrollToContact }) {
               // href="https://drive.google.com/file/d/1tpb5sQEgeQN6bg5R4wimFBVrxUDnQpJW/view?usp=sharing"
               className={style.mobile_items_a}
             >
-              Download CV
+              {/* Download CV */}
             </a>
           </div>
         </Drawer>
