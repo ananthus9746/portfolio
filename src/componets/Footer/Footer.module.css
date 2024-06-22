@@ -67,7 +67,28 @@
     gap: 30px;
 
   }
+    .git {
+      padding: 12px;
+      background-color: white;
+      border-radius: 100px;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      /* Adding transition */
+    }
   
+    .git:hover {
+      background: linear-gradient(18deg,
+          rgb(1, 4, 13) 20%,
+          rgb(76, 76, 76) 78%);
+  
+      cursor: pointer;
+      color: white;
+    }
   .contact_btn {
     color: white;
     background-color: black;

@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaTwitter } from "react-icons/fa";
+import { FaGitAlt, FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import style from "./Footer.module.css";
@@ -17,11 +17,11 @@ function Footer() {
     const yOffset = window.scrollY;
     const threshold = 2300; // adjust this value to trigger animation earlier or later
 
-    if (yOffset > threshold) {
-      controls.start({ opacity: 1, y: 0 });
-    } else {
-      controls.start({ opacity: 0, y: 50 });
-    }
+    // if (yOffset > threshold) {
+    //   controls.start({ opacity: 1, y: 0 });
+    // } else {
+    //   controls.start({ opacity: 0, y: 50 });
+    // }
   };
 
   React.useEffect(() => {
@@ -65,7 +65,13 @@ function Footer() {
             <button className={style.contact_btn}>Contact me</button>
           </ReactWhatsapp>
           <div className={style.btns}>
-            <a href="https://www.instagram.com/ananthu.official/">
+            <a href="https://github.com/ananthus9746">
+              <div className={style.git}>
+                <FaGitAlt size={26} />
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/ananthudevstudio/">
               <div className={style.insta}>
                 <AiFillInstagram size={26} />
               </div>

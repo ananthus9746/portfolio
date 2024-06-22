@@ -19,7 +19,7 @@ import old10 from "../../assets/Group 25.png";
 function Projects() {
   return (
     <>
-      <div className={style.head}>RECENT PROJECTS</div>
+      <div className={style.head}>Recent Projects</div>
       <div className={style.project_container}>
         <div className={style.card}>
           <a href="https://www.lares.ai/">

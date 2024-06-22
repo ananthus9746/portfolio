@@ -6,6 +6,7 @@ import Testamonial from "../Testamonial/Testamonial";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import { motion, useAnimation } from "framer-motion";
+import Service from "../Service/Service";
 
 function Home() {
   const projectControls = useAnimation();
@@ -63,10 +64,13 @@ function Home() {
       <section ref={profileRef}>
         <About />
       </section>
+      <section>
+        <Service/>
+      </section>
       <motion.div
-        initial={{ opacity: 710, y: 50 }}
-        animate={projectControls}
-        transition={{ duration: 0.5 }}
+        // initial={{ opacity: 710, y: 50 }}
+        // animate={projectControls}
+        // transition={{ duration: 0.5 }}
       >
         <section ref={aboutRef}>
           <Projects />
@@ -77,11 +81,13 @@ function Home() {
         <p className={style.btn}>TO KNOW MORE.</p>
       </a>
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={footerControls}
-        transition={{ duration: 0.9 }}
+        // initial={{ opacity: 0, y: 50 }}
+        // animate={footerControls}
+        // transition={{ duration: 0.9 }}
       >
-        <section ref={contactRef}>
+        <section 
+        ref={contactRef}
+        >
           <Footer />
         </section>
       </motion.div>

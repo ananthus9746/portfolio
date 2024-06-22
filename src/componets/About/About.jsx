@@ -6,6 +6,11 @@ import { FaFacebook } from "react-icons/fa";
 import style from "./About.module.css";
 import profileImageOne from "../../assets/profileImage.png";
 import profileImage from "../../assets/DSC07623 (4) croped.jpg";
+import { FaGitAlt } from "react-icons/fa";
+
+
+// import profileImageOne from "../../assets/1718717367534-01.jpeg.jpg";
+// import profileImage from "../../assets/1718717367534-01.jpeg.jpg";
 
 import Vector from "../../assets/Vector 1 (1).png";
 import { RiWhatsappFill } from "react-icons/ri";
@@ -54,6 +59,14 @@ function About() {
           <button className={style.contact_btn}>
             Contact me <IoIosArrowRoundForward size={24} />
           </button>
+
+          <a href="https://github.com/ananthus9746">
+            <div className={style.git}>
+              <FaGitAlt size={26} />
+            </div>
+          </a>
+
+
           <a href="https://www.instagram.com/ananthu.official/">
             <div className={style.insta}>
               <AiFillInstagram size={26} />
