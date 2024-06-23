@@ -260,8 +260,18 @@
   }
   
   @media screen and (max-width: 768px) {
+    .about_left{
+      padding: 0px;
+    }
+    .about_content{
+      padding: 10px;
+      margin-bottom: 10px;
+    }
     .header{
-      font-size: 28px;
+      font-size: 28px;text-align: center;
+    }
+    .para{
+      text-align: center;
     }
   .contact_btn_phone {
     display: block;
@@ -281,7 +291,10 @@
     display: none;
   }
   .btn_container {
+        width: 100%;
 gap: unset;
+/* background-color: darkblue; */
+margin-bottom: 10px;
 
   }
   .btns{

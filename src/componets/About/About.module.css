@@ -11,14 +11,7 @@
   width: 80%;
 
   animation: animateBg 18s linear infinite;
-  /* background-image: linear-gradient(
-    120deg,
-    #f0f0f0,
-    #ffefdfbb,
-    #f2f2f2,
-    #f0f0f0,
-    #fffaf5
-  ); */
+  
   background-image: linear-gradient(120deg,
       #fdce9f20,
       #44699627,

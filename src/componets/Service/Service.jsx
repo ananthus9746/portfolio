@@ -12,15 +12,18 @@ function Service() {
 
       <div className={style.card_container}>
         <div className={style.card}>
-          <div className={style.icon}>
-            <RiStackLine  />
+          <div className={style.card_content}>
+            <div className={style.icon}>
 
-            
+              <RiStackLine />
+
+            </div>
+
             <div>
               <p className={style.sub_head}>UI/UX Design</p>
-             <span className={style.service}>
-                <MdKeyboardDoubleArrowRight color='gray'/> Landing Pages
-             </span>
+              <span className={style.service}>
+                <MdKeyboardDoubleArrowRight color='gray' /> Landing Pages
+              </span>
 
               <span className={style.service}>
                 <MdKeyboardDoubleArrowRight color='gray' /> User Flow
@@ -45,9 +48,10 @@ function Service() {
           </div>
         </div>
         <div className={style.card}>
-          <div className={style.icon}>
-            <AiTwotoneCode />
-
+          <div className={style.card_content}>
+            <div className={style.icon}>
+              <AiTwotoneCode />
+            </div>
 
             <div>
               <p className={style.sub_head}>Development</p>

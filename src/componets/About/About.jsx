@@ -30,9 +30,8 @@ function About() {
           in freelancing.
         </h2>
         <p className={style.para}>
-          I'm deeply committed to leveraging design for positive change,
-          crafting user-centric experiences that are both delightful and
-          human-centered.
+          I Creating user-friendly, visually appealing digital experiences that boost engagement and conversions. Over two years of freelancing as a web developer and UI/UX designer, delivering high-quality websites and interfaces with intuitive, impactful, and satisfying user experiences.
+
         </p>
         <p style={{ fontSize: "12px", marginTop: "-10px", color: "gray" }}>
           ananthus.ann@gmail.com
@@ -107,7 +106,7 @@ function About() {
         </div>
       </div>
       <div className={style.image_cotainer}>
-      <img src={isLessThan768 ? profileImageOne : profileImage} alt="" />
+        <img src={isLessThan768 ? profileImageOne : profileImage} alt="" />
       </div>
     </div>
   );

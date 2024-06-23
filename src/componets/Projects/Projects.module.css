@@ -5,6 +5,7 @@
   padding-top: 30px;
   padding-bottom: 40px;
 }
+
 .project_container {
   /* background-color: rebeccapurple; */
   display: flex;
@@ -13,6 +14,7 @@
   align-items: center;
   gap: 20px;
 }
+
 .card {
   background-color: rgba(230, 230, 230, 0.462);
   width: 47%;
@@ -25,7 +27,18 @@
   position: relative;
   overflow: hidden;
   transition: all.5s ease;
+
+  /* Adjust this based on your layout */
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .card img {
   object-fit: cover;
   width: 100%;
@@ -34,44 +47,49 @@
   transition: transform 0.5s ease;
 }
 
-.lareai {
+.project_name {
   display: none;
   position: absolute;
+  margin-bottom: -30px;
 
-  z-index: 1; /* Ensure it's above other elements */
+  z-index: 1;
+  /* Ensure it's above other elements */
 }
 
-.card:hover .lareai {
+.card:hover .project_name {
   display: block;
   font-size: 90px;
-  padding-top: 90px;  color: rgba(210, 222, 255, 0.462);
+  padding-top: 90px;
+  color: rgba(210, 222, 255, 0.462);
   background-color: rgba(0, 0, 0, 0.247);
   width: 100%;
   height: 100%;
-  
+
   background: rgba(225, 225, 225, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(209, 209, 209, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  
+
 
 
   -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @keyframes slide-top {
   0% {
     transform: translateY(10);
   }
+
   100% {
-    transform: translateY(-100px);
+    transform: translateY(-5px);
   }
 }
 
 .card:hover .image {
-  transform: scale(1.2); /* Scale up by 20% on hover */
+  transform: scale(1.2);
+  /* Scale up by 20% on hover */
 }
 
 .arrow {
@@ -92,6 +110,7 @@
 
   z-index: 10;
 }
+
 .arrow:hover {
   background-color: rgba(219, 219, 219, 0.658);
   padding: 5px;
@@ -107,6 +126,7 @@
   margin: 15px;
   scale: 1.2;
 }
+
 @media screen and (max-width: 768px) {
   .head {
     font-size: 25px;
@@ -115,11 +135,12 @@
     padding-top: 20px;
 
   }
-  
+
   .card {
     width: 100%;
     height: 430px;
   }
+
   .card img {
     object-fit: cover;
     width: 100%;
@@ -127,6 +148,7 @@
     border-radius: 30px;
     transition: transform 0.5s ease;
   }
+
   .card:hover .lareai {
     font-size: 70px;
     padding-top: 90px;
@@ -135,50 +157,64 @@
 
 
   }
+
   .card:hover .lareai {
-  display: block;
-  font-size: 90px;
-  padding-top: 90px;  color: rgba(210, 222, 255, 0.462);
-  background-color: rgba(0, 0, 0, 0.247);
-  width: 100%;
-  height: 100%;
-  
-  background: rgba(225, 225, 225, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(209, 209, 209, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  
+    display: block;
+    font-size: 90px;
+    padding-top: 90px;
+    color: rgba(210, 222, 255, 0.462);
+    background-color: rgba(0, 0, 0, 0.247);
+    width: 100%;
+    height: 100%;
+
+    background: rgba(225, 225, 225, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(209, 209, 209, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 
 
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
 }
+
+.toggleButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+margin-top: 20px;
+}
+
+.toggleButton p {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: gray;
+  text-align: center;
+      transition: 0.3s ease;
+
+}
+.toggleButton p:hover {
+
+  color: rgb(0, 0, 0);
 
 }
 
 @media screen and (max-width: 400px) {
-  .card:hover .lareai {
-    display: none;
-    font-size: 90px;
-    padding-top: 90px;  color: rgba(210, 222, 255, 0.462);
-    background-color: rgba(0, 0, 0, 0.247);
-    width: 100%;
-    height: 100%;
-    
-    background:unset;
-    border-radius: unset;
-    box-shadow: unset;
-    backdrop-filter: unset;
-    -webkit-backdrop-filter: unset;
-    
-  
-  
-    -webkit-animation: unset;
-            animation: unset;
+  .card:hover .project_name {
+    /* display: none; */
+
   }
 
   .lareai {
-    display: none;
+    /* display: none; */
   }
 }
