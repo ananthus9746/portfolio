@@ -8,10 +8,11 @@ import Navbar from "../Navbar/Navbar";
 import { motion, useAnimation } from "framer-motion";
 import Service from "../Service/Service";
 import laresai from '../../assets/laresai.png';
-import fintrens from '../../assets/fintrens.png';
+import fintrens from '../../assets/Group 29.png';
 import homex from '../../assets/homex.png';
-import competion from '../../assets/competion.png';
+import old0 from '../../assets/old0.png';
 import old1 from '../../assets/Group 16.png';
+
 import old2 from '../../assets/Group 17.png';
 import old3 from '../../assets/Group 18.png';
 import old4 from '../../assets/Group 19.png';
@@ -21,6 +22,11 @@ import old7 from '../../assets/Group 22.png';
 import old8 from '../../assets/Group 23.png';
 import old9 from '../../assets/Group 24.png';
 import old10 from '../../assets/Group 25.png';
+import old11 from '../../assets/Group 26.png';
+import old12 from '../../assets/Group 27.png';
+import old13 from '../../assets/Group 28.png';
+import GridComponent from "../GridComponent/GridComponent";
+
 
 function Home() {
   const projectControls = useAnimation();
@@ -29,10 +35,15 @@ function Home() {
 
 
   const projects = [
-    { name: 'Lares AI', catagory: 'development' , image: laresai, link: 'https://www.lares.ai/',},
+
     { name: 'Fintrens', catagory: 'ui_ux', image: fintrens, link: 'https://www.figma.com/file/XbfXI8ip8qjE1WYYa0cayQ/Stock-Audit?type=design&mode=design&t=AYIbFYAZ2jreulgD-0' },
-    { name: 'Homex', catagory: 'development', image: homex, link: 'https://www.ananthu.online/' },
-    { name: 'Competition Intelligence', image: competion, link: 'https://www.wataniya.com.sa/' },
+    { name: 'Asset Manager', catagory: 'ui_ux', image: old11, link: '#' },
+    { name: 'Mutual Fund', catagory: 'ui_ux', image: old12, link: '#' },
+    { name: 'Wealth Manager', catagory: 'ui_ux', image: old13, link: '#' },
+
+    { name: 'Lares AI', catagory: 'development', image: laresai, link: 'https://www.lares.ai/', },
+    { name: 'Homex', catagory: 'development', image: homex, link: 'https://homexsolution.com/' },
+    { name: 'Competition Intelligence', catagory: 'development', image: old0, link: 'https://www.wataniya.com.sa/' },
     { name: 'Sholar', catagory: 'development', image: old1, link: '#' },
     { name: 'Furni', catagory: 'development', image: old3, link: '#' },
     { name: 'Haircare', catagory: 'development', image: old4, link: '#' },
@@ -92,6 +103,7 @@ function Home() {
 
   return (
     <div className={style.home}>
+    
       <Navbar
         scrollToProfile={scrollToProfile}
         scrollToAbout={scrollToAbout}

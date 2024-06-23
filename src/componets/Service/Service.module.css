@@ -13,10 +13,11 @@
 }
 
 .sub {
-    margin-top: 10px;
+    margin-top: 0px;
     padding: 0px;
     font-size: 22px;
     color: gray;
+    font-weight: 200;
 }
 
 .card_container {

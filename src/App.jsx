@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import Navbar from './componets/Navbar/Navbar'
 import Home from './componets/Home/Home'
 import AnimatedCursor from "react-animated-cursor"
+import GridComponent from './componets/GridComponent/GridComponent'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       }}
     />
      <Home/>
+      {/* <GridComponent /> */}
     </div>
   )
 }
