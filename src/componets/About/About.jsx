@@ -26,7 +26,7 @@ function About() {
       <div className={style.about_content}>
         <h2 className={style.header}>
           Hello, I’m <span style={{ color: "rgb(244,184,159)" }}>Ananthu</span>,
-          a web developer and UI/UX designer with two plus years of experience
+          a web developer and UI/UX designer with 4 plus years of experience
           in freelancing.
         </h2>
         <p className={style.para}>
